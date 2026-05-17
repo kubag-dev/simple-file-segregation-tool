@@ -1,0 +1,2 @@
+class UnrecognizedOsSystemException(Exception):
+    pass
