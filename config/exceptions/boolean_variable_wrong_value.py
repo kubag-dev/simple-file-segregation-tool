@@ -1,0 +1,2 @@
+class BooleanVariableWrongValue(Exception):
+    pass

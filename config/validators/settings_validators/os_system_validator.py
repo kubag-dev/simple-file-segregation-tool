@@ -1,10 +1,9 @@
-from config.exceptions.unrecognized_os_system_exception import (
-    UnrecognizedOsSystemException,
-)
+from config.exceptions import UnrecognizedOsSystemException
+from config.validators.interface import SettingsValidatorInterface
 from config.values.settings_values import SettingsValues
 
 
-class OsSystemValidator:
+class OsSystemValidator(SettingsValidatorInterface):
     def __init__(self, *, os_system: SettingsValues.OsSystem) -> None:
         self.os_system = os_system
 

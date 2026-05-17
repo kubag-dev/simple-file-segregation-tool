@@ -1,0 +1,6 @@
+# Fill in variables in this file, remove this line and change this file name to .env to load it as environment file
+# development
+DEBUG=#True or False
+
+# configuration
+OS_SYSTEM=#posix or nt
