@@ -1,4 +1,5 @@
 from config.settings import Settings
+from directory.api.creators.outputs import Outputs
 
 
 class Main:
@@ -11,7 +12,7 @@ class Main:
     def _ensure_output_directories_exist(
         self, *, output_structure: None = None
     ) -> None:
-        pass
+        Outputs().execute(dir_map=output_structure)
 
     def _remove_created_output_directories(
         self, *, created_output_structure: None = None
